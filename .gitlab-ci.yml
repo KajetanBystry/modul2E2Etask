@@ -1,0 +1,7 @@
+build-job:
+  stage: build
+
+test:
+  script:
+    - npm ci
+    - npm run cypress:run:bdd
